@@ -1,0 +1,14 @@
+CREATE TABLE `data_science`.`books` (
+  `id` VARCHAR(16) NOT NULL,
+  `book_name` VARCHAR(255) NULL,
+  `author_name` VARCHAR(32) NOT NULL,
+  `date_created` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP);
+
+INSERT INTO books(id, book_name, author_name, date_created)
+VALUES(1, 'The Hunger Games','Suzanne Collins','2008-09-14 00:00:00');
+INSERT INTO books(id, book_name, author_name, date_created)
+VALUES(2, 'Harry Potter and the Sorcerer\'s Stone','J.K Rowling','1997-07-30 00:00:00');
+INSERT INTO books(id, book_name, author_name, date_created)
+VALUES(3, 'Divergents','Veronica Roth','2011-04-25 00:00:00');
+
+select * from data_science.books;
